@@ -3232,7 +3232,7 @@
 		padding-right: 8px;
 		z-index: 1 !important;
 		text-decoration: none !important;
-		border: 1px solid white !important;
+		border: 1px solid transparent !important;
 	}
 
 	a.resume:hover {
