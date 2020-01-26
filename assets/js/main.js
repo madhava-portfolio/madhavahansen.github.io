@@ -13,9 +13,6 @@
 		var	$window = $(window),
 			$body = $('body');
 			$body.addClass('is-loading');
-			$window.on('load', function() {
-
-			})
 			$window.on("load", function() {
 					$body.removeClass('is-loading');
 					$cover = $('#cover');
