@@ -48,6 +48,22 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.skill-logos-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.skills-logo-item {
+		margin: 12px;
+	}
+
+	.skills-logo-item-image {
+		width: 200px;
+		height: auto;
+	}
+
 	.pacman-live {
 		cursor: pointer;
 	}
