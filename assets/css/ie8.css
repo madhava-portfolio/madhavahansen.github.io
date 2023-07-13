@@ -78,7 +78,7 @@
 /* Header */
 
 	#header {
-		background-image: url("../../images/nyc_skyline.jpg") !important;
+		background-image: url("../../images/background.jpg") !important;
 		background-size: cover !important;
 		background-position: scroll !important;
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
