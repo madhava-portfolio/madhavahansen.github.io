@@ -1,0 +1,94 @@
+.Projects {
+  padding: 50px 20px;
+  position: relative;
+  z-index: 1001;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+}
+.Projects-sectionWrapper {
+  max-width: 100%;
+  margin: 0 20px;
+  color: #fcfcfc;
+  text-align: center;
+}
+.Projects-titleWrapper {
+  color: #fcfcfc;
+  margin: 30px 20px;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+.Projects-yellowLineWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Projects-yellowLineText {
+  font-size: 40px;
+  margin: 12px 0;
+  width: 190px;
+  font-family: "Poppins";
+  color: #ffe600;
+}
+.Projects-yellowLine {
+  height: 0;
+  border: 2px solid #ffe600;
+  width: 92px;
+  margin: 5px 0 0 0;
+}
+.Projects-projectContentWrapper {
+  margin: 12px;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Projects-textSectionWrapper {
+  max-width: 400px;
+}
+.Projects-title {
+  margin: 6px 0;
+}
+.Projects-titleBodyText {
+  font-weight: normal;
+}
+.Projects-subTitle {
+  text-align: center;
+  max-width: 600px;
+}
+.Projects-linkWrapper {
+  margin: 30px 0;
+}
+.Projects-viewProjectLink {
+  padding: 12px;
+  border-radius: 10px;
+  color: #fcfcfc;
+  font-family: "Poppins";
+}
+.Projects-image {
+  max-width: 100%;
+  padding: 12px;
+  border-radius: 35px;
+}
+@media screen and (min-width: 768px) {
+  .Projects-projectContentWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Projects-subTitle, .Projects-title, .Projects-linkWrapper {
+    text-align: left;
+  }
+  .Projects-titleWrapper {
+    margin: 60px 20px;
+  }
+  .Projects-image {
+    max-width: 500px;
+  }
+}
+
+/*# sourceMappingURL=projects.css.map */

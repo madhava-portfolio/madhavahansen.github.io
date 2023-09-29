@@ -1,0 +1,92 @@
+.Projects {
+	padding: 50px 20px;
+	position: relative;
+	z-index: 1001;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #242424;
+	&-sectionWrapper {
+		max-width: 100%;
+		margin: 0 20px;
+		color: #fcfcfc;
+		text-align: center;
+	}
+	&-titleWrapper {
+		color: #fcfcfc;
+		margin: 30px 20px;
+		font-family: 'Poppins';
+		font-weight: bold;
+	}
+	&-yellowLineWrapper {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&-yellowLineText {
+		font-size: 40px;
+		margin: 12px 0;
+		width: 190px;
+		font-family: 'Poppins';
+		color: #ffe600;
+	}
+	&-yellowLine {
+		height: 0; 
+		border: 2px solid #ffe600; 
+		width: 92px;
+		margin: 5px 0 0 0;
+	}
+	&-projectContentWrapper {
+		margin: 12px;
+		font-family: 'Poppins';
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	&-textSectionWrapper {
+		max-width: 400px;
+	}
+	&-title {
+		margin: 6px 0;
+	}
+	&-titleBodyText {
+		font-weight: normal;
+	}
+	&-subTitle {
+		text-align: center;
+		max-width: 600px;
+	}
+	&-linkWrapper {
+		margin: 30px 0;
+	}
+	&-viewProjectLink {
+		padding: 12px;
+		border-radius: 10px;
+		color: #fcfcfc;
+		font-family: 'Poppins';
+	}
+	&-image {
+		max-width: 100%;
+		padding: 12px;
+		border-radius: 35px;
+	}
+	@media screen and (min-width: 768px) {
+		&-projectContentWrapper {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&-subTitle, &-title, &-linkWrapper {
+			text-align: left;
+		}
+		&-titleWrapper {
+			margin: 60px 20px;
+		} 
+		&-image {
+			max-width: 500px;
+		}
+	}
+}

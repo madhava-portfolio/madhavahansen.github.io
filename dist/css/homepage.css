@@ -1,0 +1,278 @@
+@keyframes flicker {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+@keyframes fireAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.7;
+  }
+}
+@keyframes fireAnimationAlt {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.4;
+  }
+}
+@keyframes moveMoonCloser {
+  0% {
+    width: 150px;
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    width: 1000px;
+    transform: translateX(150%);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.Homepage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.Homepage-moonWrapper {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.Homepage-textSectionWrapper {
+  text-align: center;
+}
+.Homepage-moon {
+  position: relative;
+  width: 255px;
+  height: auto;
+  border-radius: 100%;
+  animation: moveMoonCloser 20s ease-in-out forwards;
+  z-index: 1;
+}
+.Homepage-headshotWrapperAndText {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Homepage-greetingLineOne {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 1s;
+}
+.Homepage-greetingLineTwo {
+  width: 250px;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 2s;
+}
+.Homepage-greetingLineThree {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 3s;
+}
+.Homepage-myWorkButtonWrapper {
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.5s;
+}
+.Homepage-greetingLineOne, .Homepage-greetingLineThree, .Homepage-myWorkButtonWrapper {
+  text-align: center;
+}
+.Homepage-greetingLineOne, .Homepage-greetingLineThree {
+  color: #fcfcfc;
+  font-family: "Poppins";
+  font-size: 30px;
+  padding-bottom: 16px;
+}
+.Homepage-greetingLineThree {
+  padding-top: 20px;
+}
+.Homepage-headshot {
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 6s;
+}
+.Homepage-myWorkButtonWrapper:hover {
+  cursor: pointer;
+}
+.Homepage-myWorkButton {
+  padding: 19px 41px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 12px 0;
+  border: none;
+  color: black;
+  z-index: 1000;
+  background-color: #ffe600;
+  margin-top: 33px;
+}
+.Homepage-buttonDecoration {
+  width: 57%;
+  position: absolute;
+  top: 25px;
+  left: 51px;
+}
+.Homepage-myName, .Homepage-jobTitle {
+  opacity: 0;
+  color: #fcfcfc;
+  font-size: 36px;
+  text-align: center;
+  font-family: "Poppins";
+}
+.Homepage-myName {
+  animation: fadeIn 3s forwards;
+  animation-delay: 11s;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #F0FE75;
+  font-size: 60px;
+}
+.Homepage-jobTitle {
+  animation: fadeIn 3s forwards;
+  animation-delay: 12s;
+  font-size: 28px;
+}
+.Homepage-title {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.Homepage-spaceShipWrapper {
+  position: absolute;
+  bottom: 50px;
+  width: 90px;
+  z-index: 1;
+}
+.Homepage-spaceShip {
+  bottom: 0px;
+  animation: moveLeftAndRight 5s linear infinite;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Homepage-spaceShipImage {
+  width: 80px;
+  height: 80px;
+}
+.Homepage-fire, .Homepage-fireAlt {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fireAnimation 1.5s infinite;
+}
+.Homepage-fireAlt {
+  animation: fireAnimationAlt 1.2s infinite;
+  left: 50%;
+}
+.Homepage-bullet {
+  width: 5px;
+  height: 9px;
+  border-radius: 100% 100% 0% 0%;
+  background-color: #fcfcfc;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+@media screen and (min-width: 800px) {
+  .Homepage-greetingLineOne, .Homepage-greetingLineThree {
+    font-size: 34px;
+  }
+  .Homepage-greetingLineTwo {
+    width: 350px;
+  }
+  .Homepage-headshot {
+    width: 450px;
+  }
+  .Homepage-buttonDecoration {
+    width: 45%;
+    position: absolute;
+    top: 25px;
+    left: 89px;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .Homepage-buttonDecoration {
+    width: 32%;
+    position: absolute;
+    top: 25px;
+    left: 160px;
+  }
+  .Homepage-textSectionWrapper {
+    text-align: left;
+    padding-left: 74px;
+  }
+  .Homepage-headshotWrapperAndText {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Homepage-greetingLineOne, .Homepage-greetingLineThree, .Homepage-myWorkButtonWrapper {
+    text-align: left;
+  }
+  .Homepage-buttonDecoration {
+    left: -6px;
+  }
+  .Homepage-headshot {
+    width: 661px;
+    padding-top: 37px;
+    max-width: 100%;
+  }
+  .Homepage-greetingLineTwo {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=homepage.css.map */
