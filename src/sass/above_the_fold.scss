@@ -1,27 +1,46 @@
 @import 'keyframes.scss';
 
-.Homepage {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
+.AboveTheFold {
+  &, 
+  &-moon,
+  &-myWorkButtonWrapper {
+    position: relative;
+  }
+  &,
   &-moonWrapper {
-    text-align: center;
-    width: 100%;
     height: 100vh;
+  }
+  &, 
+  &-headshotWrapperAndText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &, 
+  &-moonWrapper,
+  &-headshotWrapperAndText,
+  &-headshot,
+  &-title {
+    width: 100%;
+  }
+
+  &-myName, 
+  &-jobTitle,
+  &-greetingLineOne,
+  &-greetingLineTwo,
+  &-greetingLineThree,
+  &-myWorkButtonWrapper,
+  &-headshot {
+    opacity: 0;
+  }
+  &-moonWrapper {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
   }
-  &-textSectionWrapper {
-    text-align: center;
-  }
   &-moon {
-    position: relative;
     width: 255px;
     height: auto;
     border-radius: 100%;
@@ -30,49 +49,45 @@
   }
   &-headshotWrapperAndText {
     position: absolute;
-    width: 100%;
     height: 100vh;
     z-index: 5;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
-  &-greetingLineOne {
-    opacity: 0;
+  &-greetingLineOne,
+  &-greetingLineTwo,
+  &-greetingLineThree,
+  &-myWorkButtonWrapper {
     animation: fadeIn 3s forwards;
+  }
+
+  &-greetingLineOne {
     animation-delay: 1s;
   }
   &-greetingLineTwo {
     width: 250px;
-    opacity: 0;
-    animation: fadeIn 3s forwards;
     animation-delay: 2s;
   }
   &-greetingLineThree {
-    opacity: 0;
-    animation: fadeIn 3s forwards;
     animation-delay: 3s;
   }
   &-myWorkButtonWrapper {
-    position: relative;
-    opacity: 0;
-    animation: fadeIn 3s;
-    animation-fill-mode: forwards;
     animation-delay: 3.5s;
   }
   &-greetingLineOne, 
   &-greetingLineThree,
-  &-myWorkButtonWrapper {
+  &-myWorkButtonWrapper,
+  &-moonWrapper,
+  &-textSectionWrapper,
+  &-myName, 
+  &-jobTitle {
     text-align: center;
   }
-  &-greetingLineOne, &-greetingLineThree {
+  &-greetingLineOne, 
+  &-greetingLineThree {
     color: #fcfcfc;
-    font-family: 'Poppins';
     font-size: 30px;
     padding-bottom: 16px;
   }
@@ -81,8 +96,6 @@
   }
   &-headshot {
     max-width: 400px;
-    width: 100%;
-    opacity: 0;
     animation: fadeIn 3s forwards;
     animation-delay: 6s;
   }
@@ -107,12 +120,15 @@
     top: 25px;
     left: 51px;
   }
+  &-myName, 
+  &-jobTitle,
+  &-greetingLineOne, 
+  &-greetingLineThree {
+    font-family: 'Poppins';
+  }
   &-myName, &-jobTitle {
-    opacity: 0;
     color: #fcfcfc;
     font-size: 36px;
-    text-align: center;
-    font-family: 'Poppins';
   }
   &-myName {
     animation: fadeIn 3s forwards;
@@ -129,27 +145,8 @@
     font-size: 28px;
   }
   &-title {
-    width: 100%;
     text-align: center;
     display: none;
-  }
-  &-spaceShipWrapper {
-    position: absolute;
-    bottom: 50px;
-    width: 90px;
-    z-index: 1;
-  }
-  &-spaceShip {
-    bottom: 0px;
-    animation: moveLeftAndRight 5s linear infinite;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &-spaceShipImage {
-    width: 80px;
-    height: 80px;
   }
   &-fire, &-fireAlt {
     width: 20px;
@@ -220,7 +217,6 @@
     &-headshot {
       width: 661px;
       padding-top: 37px;
-      max-width: 100%;
     }
     &-greetingLineTwo {
       width: 100%;
