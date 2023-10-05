@@ -1,7 +1,7 @@
 @import 'keyframes.scss';
 
 .AboveTheFold {
-  &, 
+  &,
   &-moon,
   &-myWorkButtonWrapper {
     position: relative;
@@ -10,14 +10,14 @@
   &-moonWrapper {
     height: 100vh;
   }
-  &, 
+  &,
   &-headshotWrapperAndText {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  &, 
+  &,
   &-moonWrapper,
   &-headshotWrapperAndText,
   &-headshot,
@@ -25,7 +25,8 @@
     width: 100%;
   }
 
-  &-myName, 
+
+  &-myName,
   &-jobTitle,
   &-greetingLineOne,
   &-greetingLineTwo,
@@ -63,6 +64,7 @@
     animation: fadeIn 3s forwards;
   }
 
+
   &-greetingLineOne {
     animation-delay: 1s;
   }
@@ -76,16 +78,16 @@
   &-myWorkButtonWrapper {
     animation-delay: 3.5s;
   }
-  &-greetingLineOne, 
+  &-greetingLineOne,
   &-greetingLineThree,
   &-myWorkButtonWrapper,
   &-moonWrapper,
   &-textSectionWrapper,
-  &-myName, 
+  &-myName,
   &-jobTitle {
     text-align: center;
   }
-  &-greetingLineOne, 
+  &-greetingLineOne,
   &-greetingLineThree {
     color: #fcfcfc;
     font-size: 30px;
@@ -120,9 +122,9 @@
     top: 25px;
     left: 51px;
   }
-  &-myName, 
+  &-myName,
   &-jobTitle,
-  &-greetingLineOne, 
+  &-greetingLineOne,
   &-greetingLineThree {
     font-family: 'Poppins';
   }
@@ -137,7 +139,6 @@
     font-weight: bold;
     color: #F0FE75;
     font-size: 60px;
-
   }
   &-jobTitle {
     animation: fadeIn 3s forwards;
@@ -151,7 +152,6 @@
   &-fire, &-fireAlt {
     width: 20px;
     height: 30px;
-    // background: radial-gradient(circle, #FF4500, transparent);
     position: absolute;
     bottom: 42px;
     left: 50%;
@@ -173,23 +173,25 @@
     z-index: 2;
   }
 
-  @media screen and (min-width: 800px) {
-    &-greetingLineOne, &-greetingLineThree {
-      font-size: 34px;
-    }
-    &-greetingLineTwo {
-      width: 350px;
-    }
-    &-headshot {
-      width: 450px;
-    }
-    &-buttonDecoration {
-      width: 45%;
-      position: absolute;
-      top: 25px;
-      left: 89px;
-    }
+
+@media screen and (min-width: 800px) {
+  &-greetingLineOne, &-greetingLineThree {
+    font-size: 34px;
   }
+  &-greetingLineTwo {
+    width: 350px;
+  }
+  &-headshot {
+    width: 450px;
+  }
+  &-buttonDecoration {
+    width: 45%;
+    position: absolute;
+    top: 25px;
+    left: 89px;
+  }
+}
+
 
   @media screen and (min-width: 1030px) {
     &-buttonDecoration {
@@ -202,11 +204,11 @@
       text-align: left;
       padding-left: 74px;
     }
-    &-headshotWrapperAndText { 
+    &-headshotWrapperAndText {
       flex-direction: row;
       justify-content: space-between;
     }
-    &-greetingLineOne, 
+    &-greetingLineOne,
     &-greetingLineThree,
     &-myWorkButtonWrapper {
       text-align: left;
@@ -217,12 +219,13 @@
     &-headshot {
       width: 661px;
       padding-top: 37px;
+      max-width: 100%;
     }
     &-greetingLineTwo {
       width: 100%;
     }
-
-
   }
 
+
 }
+

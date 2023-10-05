@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   const setMyWorkButtonEventListener = () => {
-    const yellowButton = document.querySelector(".Homepage-myWorkButtonWrapper");
+    const yellowButton = document.querySelector(".AboveTheFold-myWorkButtonWrapper");
     const projects = document.querySelector(".Projects");
     yellowButton.addEventListener("click", () => {
       projects.scrollIntoView({behavior: 'smooth'});
