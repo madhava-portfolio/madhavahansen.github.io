@@ -9,6 +9,9 @@
 	justify-content: center;
 	align-items: center;
 	background-color: #242424;
+	&-textWrapper {
+		min-width: 300px;
+	}
 	&-sectionWrapper {
 		max-width: 100%;
 		margin: 0 20px;
@@ -23,7 +26,7 @@
 	}
 	&-yellowLineWrapper {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: center;
 	}
 	&-yellowLineText {
@@ -75,6 +78,9 @@
 		border-radius: 35px;
 	}
 	@media screen and (min-width: 768px) {
+		&-yellowLineWrapper {
+			justify-content: flex-start;
+		}
 		&-projectContentWrapper {
 			flex-direction: row;
 			justify-content: space-between;

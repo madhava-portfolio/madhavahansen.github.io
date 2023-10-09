@@ -8,16 +8,33 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  &-icons, &-copyright {
+  &-icons, &-copyright, &-emailTextVersion {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Poppins';
   }
   &-icons {
-    margin-bottom: 20px;
+    width: 80px;
   }
   &-copyright li {
     margin: 0 12px;
+  }
+  &-linkedinIcon {
+    width: 20px; 
+    margin-right: 26px 23px 0 0; 
+  }
+  &-emailIcon {
+    width: 50px;
+  }
+  &-linkedinIconImage { 
+    width: 36px;
+  }
+  &-emailIconImage {
+    width: 30px; 
+    margin-top: 8px;
+  }
+  &-emailTextVersion {
+    margin: 12px 0;
   }
 }

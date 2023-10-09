@@ -10,6 +10,9 @@
   align-items: center;
   background-color: #242424;
 }
+.Projects-textWrapper {
+  min-width: 300px;
+}
 .Projects-sectionWrapper {
   max-width: 100%;
   margin: 0 20px;
@@ -24,7 +27,7 @@
 }
 .Projects-yellowLineWrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 .Projects-yellowLineText {
@@ -76,6 +79,9 @@
   border-radius: 35px;
 }
 @media screen and (min-width: 768px) {
+  .Projects-yellowLineWrapper {
+    justify-content: flex-start;
+  }
   .Projects-projectContentWrapper {
     flex-direction: row;
     justify-content: space-between;

@@ -9,17 +9,34 @@
   align-items: center;
   flex-direction: column;
 }
-.Footer-icons, .Footer-copyright {
+.Footer-icons, .Footer-copyright, .Footer-emailTextVersion {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: "Poppins";
 }
 .Footer-icons {
-  margin-bottom: 20px;
+  width: 80px;
 }
 .Footer-copyright li {
   margin: 0 12px;
+}
+.Footer-linkedinIcon {
+  width: 20px;
+  margin-right: 26px 23px 0 0;
+}
+.Footer-emailIcon {
+  width: 50px;
+}
+.Footer-linkedinIconImage {
+  width: 36px;
+}
+.Footer-emailIconImage {
+  width: 30px;
+  margin-top: 8px;
+}
+.Footer-emailTextVersion {
+  margin: 12px 0;
 }
 
 /*# sourceMappingURL=footer.css.map */
