@@ -454,13 +454,14 @@ html, body, div, p, ul, li, a, img {
 }
 
 body {
-  overflow-x: hidden;
   background: black;
 }
 
 .Space {
   position: relative;
+  overflow-x: hidden;
   width: 100%;
+  max-width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
