@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const star = document.createElement("div");
       // generate random sized stars to look more realistic
       if (i % 10 === 0) {
-        star.classList.add("Star");
+        star.classList.add("Space-star");
       } else if (i % 3 === 0) {
-        star.classList.add("StarWithoutFlicker");
+        star.classList.add("Space-starWithoutFlicker");
       } else if (i % 34 === 0) {
-        star.classList.add("StarWithAlternateSize");
+        star.classList.add("Space-starWithAlternateSize");
       } else {
-        star.classList.add("TinyStar");
+        star.classList.add("Space-tinyStar");
       }
       star.style.left = `${Math.random() * 100}%`;
       star.style.top = `${Math.random() * 100}%`;
