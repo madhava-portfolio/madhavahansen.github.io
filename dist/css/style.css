@@ -473,11 +473,101 @@
   width: 1px;
 }
 
+.Pacman {
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+@media screen and (max-width: 600px) {
+  .Pacman {
+    display: none;
+  }
+}
+.Pacman-image {
+  display: none;
+}
+.Pacman-mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.Pacman-logo {
+  width: 300px;
+  text-align: center;
+}
+.Pacman-credit {
+  font-size: 20px;
+  color: #f3f315;
+  text-align: center;
+  font-family: arial;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.Pacman-canvasWrapper {
+  position: relative;
+}
+.Pacman-canvas {
+  border-radius: 20px;
+  border: 4px solid #f3f315;
+}
+.Pacman-hidden {
+  display: none;
+}
+.Pacman-links {
+  color: white;
+  list-style: none;
+  margin-top: 20px;
+  max-width: 100px;
+}
+.Pacman-links a {
+  text-decoration: none;
+  color: #f3f315;
+}
+.Pacman-links a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.Pacman-linkTitle {
+  font-size: 20px;
+  text-decoration: underline;
+  color: white;
+}
+.Pacman-linksList {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.Pacman-controlTitle {
+  font-size: 20px;
+  color: white;
+  text-decoration: underline;
+}
+.Pacman-controls {
+  color: #f3f315;
+  margin-bottom: 20px;
+}
+.Pacman-continueGame, .Pacman-newGame, .Pacman-nextLevel, .Pacman-gameOver {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f3f315;
+  z-index: 1;
+  font-size: 40px;
+  width: 100%;
+  font-family: arial;
+  text-shadow: 2px 2px white;
+}
+
 html, body, div, p, ul, li, a, img {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
   box-sizing: border-box;

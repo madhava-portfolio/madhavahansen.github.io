@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;900&display=swap" rel="stylesheet">
   </head>
-  <body>
+	<body>
+  <section>
     <div class="Space">
       <div class="AboveTheFold">
         <div class="AboveTheFold-moonWrapper"> 
@@ -84,7 +85,35 @@
 						</div>
 					</div>
 				</div>
-
+				<section class="Pacman">
+					<img class="Pacman-image" id="right" src="./assets/images/pacman_right.png" alt="right">
+					<img class="Pacman-image" id="up" src="./assets/images/pacman_up.png" alt="up">
+					<img class="Pacman-image" id="left" src="./assets/images/pacman_left.png" alt="left">
+					<img class="Pacman-image" id="down" src="./assets/images/pacman_down.png" alt="down">
+					<img class="Pacman-image" id="ghost-green" src="./assets/images/ghost_green.png" alt="ghost-green">
+					<img class="Pacman-image" id="ghost-red" src="./assets/images/ghost_red.png" alt="ghost-red">
+					<img class="Pacman-image" id="ghost-pink" src="./assets/images/ghost_pink.png" alt="ghost-pink">
+					<img class="Pacman-image" id="ghost-yellow" src="./assets/images/ghost_yellow.png" alt="ghost-yellow">
+					<img class="Pacman-image" id="ghost-kill-mode" src="./assets/images/ghost_kill_mode.png" alt="ghost-kill">
+					<audio id="pacman-beginning" src="./assets/sounds/pacman_beginning.wav"></audio>
+					<audio id="chomp-sound" src="./assets/sounds/pacman_chomp.wav"></audio>
+					<audio id="death-sound" src="./assets/sounds/pacman_death.wav"></audio>
+					<audio id="eating-ghost-sound" src="./assets/sounds/pacman_eatghost.wav"></audio>
+					<audio id="siren" src="./assets/sounds/siren.wav"></audio>
+					<div class="Pacman-mainContainer">
+					<img class="Pacman-logo" src="./assets/images/pacman_logo.png">
+					<h3 class="Pacman-credit">by Madhava Hansen</h3>
+						<div class="Pacman-canvasWrapper">
+							<canvas class="Pacman-canvas" width="540" height="380"></canvas>
+							<h3 class="Pacman-hidden" id="Pacman-newGame">Press "n" to start a new game</h3>
+							<h3 class="Pacman-hidden" id="Pacman-continueGame">Press "c" to continue your game</h3>
+							<h3 class="Pacman-hidden" id="Pacman-nextLevel">Press "n" to start the next level</h3>
+							<h3 class="Pacman-hidden" id="Pacman-gameOver">Game Over</h3>
+						</div>
+						</div>
+						</div>
+					</div>
+				</section>
 
 				</div>
 			</div>
@@ -101,4 +130,5 @@
 		</footer>
   </body>
 	<script src="./js/index.js"></script>
+	<script type="module" src="./js/main.js"></script>
 </html>

@@ -1,0 +1,94 @@
+
+
+.Pacman {
+  width: 100%;
+  padding: 0 0 30px 0;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+  &-image {
+    display: none;
+  }
+  &-mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  &-logo {
+    width: 300px;
+    text-align: center;
+  }
+  &-credit {
+    font-size: 20px;
+    color: #f3f315;
+    text-align: center;
+    font-family: arial;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &-canvasWrapper {
+    position: relative;
+  }
+  &-canvas {
+    border-radius: 20px;
+    border: 4px solid #f3f315;
+  }
+  &-hidden {
+    display: none;
+  }
+  &-links {
+    a {
+      text-decoration: none;
+      color: #f3f315;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: white;
+    }
+    color: white;
+    list-style: none;
+    margin-top: 20px;
+    max-width: 100px;
+  }
+  &-linkTitle {
+    font-size: 20px;
+    text-decoration: underline;
+    color: white;
+  }
+  &-linksList {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  &-controlTitle {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+  }
+  &-controls {
+    color: #f3f315;
+    margin-bottom: 20px;
+  }
+  &-continueGame,
+  &-newGame,
+  &-nextLevel,
+  &-gameOver {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f3f315;
+    z-index: 1;
+    font-size: 40px;
+    width: 100%;
+    font-family: arial;
+    text-shadow: 2px 2px white;
+  }
+}
+
