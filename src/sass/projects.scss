@@ -1,14 +1,48 @@
 .Projects {
-	padding: 50px 20px;
-	position: relative;
+	padding: 50px 40px;
 	z-index: 1001;
 	max-width: 1200px;
+	position: relative;
 	margin: 0 auto;
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	background-color: #242424;
+	&, 
+	&-skillsHeadingWrapper,
+	&-skillsWrapper,
+	&-skillItem,
+	&-yellowLineWrapper,
+	&-projectContentWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-skillsHeadingWrapper {
+		margin: 16px;
+		width: 100%;
+		font-weight: bold;
+	}
+	&-skillsWrapper {
+		width: 100%;
+		margin: 30px 0;
+		flex-wrap: wrap;
+	}
+	&-skillItem {
+		width: 100px;
+		flex-direction: column;
+		margin: 30px;
+	}
+	&-skillItemImage {
+		width: 100%;
+		height: auto;
+	}
+	&-skillItemText {
+		width: 100%;
+		text-align: center;
+		font-size: 24px;
+		color: white;
+		font-family: 'Poppins';
+	}
 	&-textWrapper {
 		min-width: 300px;
 	}
@@ -20,35 +54,30 @@
 	}
 	&-titleWrapper {
 		color: #fcfcfc;
-		margin: 30px 20px;
+		margin: 30px 0;
 		font-family: 'Poppins';
 		font-weight: bold;
-	}
-	&-yellowLineWrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	&-yellowLineText {
 		font-size: 40px;
 		margin: 12px 0;
 		width: 190px;
 		font-family: 'Poppins';
-		color: #ffe600;
+		color: #fcfcfc;
 	}
 	&-yellowLine {
 		height: 0; 
-		border: 2px solid #ffe600; 
+		border: 2px solid #fcfcfc; 
 		width: 92px;
 		margin: 5px 0 0 0;
 	}
 	&-projectContentWrapper {
 		margin: 12px;
 		font-family: 'Poppins';
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-direction: column;
+	}
+	&-skillsHeadingText {
+		width: 130px;
 	}
 	&-textSectionWrapper {
 		max-width: 400px;
@@ -78,6 +107,9 @@
 		border-radius: 35px;
 	}
 	@media screen and (min-width: 768px) {
+		&-skillsHeadingWrapper {
+			justify-content: flex-start;
+		}
 		&-yellowLineWrapper {
 			justify-content: flex-start;
 		}
@@ -89,7 +121,7 @@
 			text-align: left;
 		}
 		&-titleWrapper {
-			margin: 60px 20px;
+			margin: 60px 0;
 		} 
 		&-image {
 			max-width: 500px;

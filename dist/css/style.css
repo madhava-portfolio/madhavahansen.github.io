@@ -244,16 +244,44 @@
 }
 
 .Projects {
-  padding: 50px 20px;
-  position: relative;
+  padding: 50px 40px;
   z-index: 1001;
   max-width: 1200px;
+  position: relative;
   margin: 0 auto;
-  display: flex;
   flex-direction: column;
+  background-color: #242424;
+}
+.Projects, .Projects-skillsHeadingWrapper, .Projects-skillsWrapper, .Projects-skillItem, .Projects-yellowLineWrapper, .Projects-projectContentWrapper {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #242424;
+}
+.Projects-skillsHeadingWrapper {
+  margin: 16px;
+  width: 100%;
+  font-weight: bold;
+}
+.Projects-skillsWrapper {
+  width: 100%;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.Projects-skillItem {
+  width: 100px;
+  flex-direction: column;
+  margin: 30px;
+}
+.Projects-skillItemImage {
+  width: 100%;
+  height: auto;
+}
+.Projects-skillItemText {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-family: "Poppins";
 }
 .Projects-textWrapper {
   min-width: 300px;
@@ -266,35 +294,30 @@
 }
 .Projects-titleWrapper {
   color: #fcfcfc;
-  margin: 30px 20px;
+  margin: 30px 0;
   font-family: "Poppins";
   font-weight: bold;
-}
-.Projects-yellowLineWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .Projects-yellowLineText {
   font-size: 40px;
   margin: 12px 0;
   width: 190px;
   font-family: "Poppins";
-  color: #ffe600;
+  color: #fcfcfc;
 }
 .Projects-yellowLine {
   height: 0;
-  border: 2px solid #ffe600;
+  border: 2px solid #fcfcfc;
   width: 92px;
   margin: 5px 0 0 0;
 }
 .Projects-projectContentWrapper {
   margin: 12px;
   font-family: "Poppins";
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+}
+.Projects-skillsHeadingText {
+  width: 130px;
 }
 .Projects-textSectionWrapper {
   max-width: 400px;
@@ -324,6 +347,9 @@
   border-radius: 35px;
 }
 @media screen and (min-width: 768px) {
+  .Projects-skillsHeadingWrapper {
+    justify-content: flex-start;
+  }
   .Projects-yellowLineWrapper {
     justify-content: flex-start;
   }
@@ -335,7 +361,7 @@
     text-align: left;
   }
   .Projects-titleWrapper {
-    margin: 60px 20px;
+    margin: 60px 0;
   }
   .Projects-image {
     max-width: 500px;
